@@ -9,6 +9,20 @@ for (let card of cards) {
     })
 }
 
-document.querySelector(".material-icons").addEventListener("click", function(){
+document.querySelector(".close-modal").addEventListener("click", function(){
    modalOverlay.classList.remove("active")
 })
+
+const modal = document.querySelector('.modal');
+
+document.querySelector(".maximize-buttom").addEventListener("click", function() {
+    if (modal.classList.contains("maximized")) {
+        modal.classList.remove("maximized")
+   
+    } else {
+        modal.classList.add("maximized")
+
+    }
+})
+
+
